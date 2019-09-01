@@ -1,0 +1,97 @@
+<!doctype html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Martel|Red+Hat+Text&display=swap" rel="stylesheet">
+    <title>Recipe Library - Home</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<html>
+    <body>
+        <!-- top navigation bar -->
+        <div class="topnav" id="topNav">
+            <a href="index.html" class="active">Home</a>
+            <a href="cakes.html">Cakes/Cupcakes</a>
+            <a href="slices.html">Slices/Biscuits</a>
+            <a href="tarts.html">Tarts/Pies</a>
+            <a href="desserts.html">Desserts</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        
+        <div>
+            <h2>Recipe Library</h2>
+            <h3>Click on any of the categories above to get started! Below is a table of recipes and their categories.</h3>
+            
+                <!-- table displays recipes and the categories they're under -->
+                <table>
+                    <tr>
+                        <th style="width: 25%">Cakes/Cupcakes</th>
+                        <th style="width: 25%">Slices/Biscuits</th>
+                        <th style="width: 25%">Tarts/Pies</th>
+                        <th style="width: 25%">Desserts</th>
+                    </tr>
+                    <tr>
+                        <td style="width: 25%">Chocolate Mint Cake</td>
+                        <td style="width: 25%">Chocolate Chip Cookie</td>
+                        <td style="width: 25%">Apple Pie</td>
+                        <td style="width: 25%">Caramel Custard</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 25%">Coffee & Walnut Cake</td>
+                        <td style="width: 25%">Fudgy Brownies</td>
+                        <td style="width: 25%">Lemon Meringue Tart</td>
+                        <td style="width: 25%">Chocolate Cheesecake</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 25%">Vanilla Cupcakes</td>
+                        <td style="width: 25%">Gingerbread Men</td>
+                        <td style="width: 25%">Pumpkin Pie</td>
+                        <td style="width: 25%">Pavlova</td>
+                    </tr>
+                </table>
+ 
+            <br><br><br><br><br>
+            <p>Baking notes:</p>
+            <li>Weights and measurements are provided in both metric and imperial units as well as baking measurements such as cups or teaspoons. For those who are new to baking, tsp = teaspoons and tbsp = tablespoon.</li>
+            <br>
+            <li>When measuring ingredients, a scale is the most accurate but measuring equipment can be used instead. Always level out ingredients to the top of the measuring equipment.</li>
+            <br>
+            <li>Temperature fluctuates in an oven during baking and each oven varies. Some ovens cook unevenly so make adjustments such as rotating the dish during baking to achieve even browning.</li>
+            <br>
+            <li>Eggs should be brought up to room temperature before being used, unless stated. The eggs used in the recipes are assumed to be large (55g, 2oz) eggs so make adjustments accordingly.</li>
+            <br>
+            <li>Unsalted butter should always be used, unless stated. This is because salt can be added according to taste but also because salted butter contains annatto which is a yellow food colouring. It also has a higher water content than unsalted butter.</li>
+            <br>
+            <li>Butter should be softened to room temperature when making cakes. This can be done by leaving the butter out to warm to room temperature and the softness allows it to cream well with sugar.</li>
+            <br>
+            <li>Butter should be chilled when making pastries. This allows for it to be rubbed into the flour to make a crumbly mixture.</li>
+            <br>
+            <li>As a rule of thumb, if chocolate is the main part of the dish, a higher cocoa content chocolate is a good choice. This is because it has a lower sugar content which makes the flavour more chocolately and less sugary.</li>
+            <br>
+            <li>Once you get more familiar with the recipes, you can even substitute in different ingredients. For example, you could substitute out regular milk for soy milk if you have allergies. A portion of flour can be substituted with cocoa powder for a chocolate flavour, and so on. Experiment around to see what works for you!</li>
+            <br><br><br><br><br>
+            <p style="font-size: 16px">Sources:</p>
+            <li style="font-size: 12px">All of the images used in the recipes are from <a href="https://unsplash.com/" style="text-decoration: underline">Unsplash</a> which is an image library that hosts thousands of free-to-use images. Photographers who upload their images there let others use them for free in commercial and noncommercial purposes with no <a href="https://unsplash.com/license" style="text-decoration: underline">license</a> needed.</li>
+            <li style="font-size: 12px">The recipes used are based on actual ones from the cookbook <i>The Baker's Kitchen</i> by <a href="http://captainhoney.com.au/" style="text-decoration: underline">Captain Honey</a>. Many of the instructions have been rewritten and some different directions have been added. There is also an explanation at each step as this website assumes the user is completely new.</li>
+            <li style="font-size: 12px">Much of the functions of this website are based on examples and tutorials from <a href="https://www.w3schools.com/howto/default.asp" style="text-decoration: underline">W3schools</a>. The website is dedicated to giving users coding tutorials in languages such as HTML, CSS, JavaScript, SQL and Python. Example code is also given and the users are encouraged to change the code to see what it does.</li>
+        </div>
+        
+        <!-- this piece of javascript codes the hamburger icon -->
+        <script>
+            function myFunction() {
+                var x = document.getElementById("topNav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+            }
+        </script>
+    </body>
+</html>
